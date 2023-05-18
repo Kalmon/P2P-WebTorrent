@@ -13,14 +13,14 @@
     "test-node": "node test/*.js",
     "test:all": "npm run test-node && npm run test-browser",
     "test": "standard && start-server-and-test 'node start-trackers.js' 5001 test:all"
-  }, 
+  },
   "dependencies": {
     "bittorrent-tracker": "^9.14.5",
     "randombytes": "^2.1.0",
     "simple-sha1": "^3.0.1"
   },
   "optionalDependencies": {
-    "wrtc": "github:koush/node-webrtc#0.5.3"
+    "wrtc": "^0.4.7"
   },
   "devDependencies": {
     "airtap": "^3.0.0",
