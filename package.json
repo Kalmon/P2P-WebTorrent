@@ -20,7 +20,7 @@
     "simple-sha1": "^3.0.1"
   },
   "optionalDependencies": {
-    "wrtc": "github:koush/node-webrtc"
+    "wrtc": "github:koush/node-webrtc#0.5.3"
   },
   "devDependencies": {
     "airtap": "^3.0.0",
