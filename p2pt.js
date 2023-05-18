@@ -260,9 +260,16 @@ class P2PT extends EventEmitter {
 
         data.msg = remaining
         chunks++
+        if((chunks % 100) == 0){
+          await sleep(500);
+        }
       }
 
       debug('sent a message to ' + peer.id)
+      //Waiting every 1.6M, thus preventing the peer from closing the connection because it thinks it is attacking DDOS, thus accepting files greater than 20M.
+      function sleep(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
     })
   }
 
