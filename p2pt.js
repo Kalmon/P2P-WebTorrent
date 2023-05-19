@@ -214,7 +214,7 @@ class P2PT extends EventEmitter {
    * @param integer msgID ID of message if it's a response to a previous message
    */
   send (peer, msg, msgID = '') {
-    return new Promise((resolve, reject) => {
+    return new Promise(async (resolve, reject) => {
       const data = {
         id: msgID !== '' ? msgID : Math.floor(Math.random() * 100000 + 100000),
         msg
