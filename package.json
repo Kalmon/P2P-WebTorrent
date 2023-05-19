@@ -21,7 +21,7 @@
     "simple-sha1": "^3.0.1"
   },
   "optionalDependencies": {
-    "wrtc": "^0.4.7"
+    "@koush/wrtc": "^0.5.3"
   },
   "devDependencies": {
     "airtap": "^3.0.0",
