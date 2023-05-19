@@ -10139,7 +10139,9 @@ class P2PT extends EventEmitter {
           await sleep(500);
         }
       }
-
+	setTimeout(()=>{
+		resolve(null);
+	},60000);
       debug('sent a message to ' + peer.id)
       function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
